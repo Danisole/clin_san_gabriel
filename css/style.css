@@ -9847,3 +9847,20 @@ h6,
   }
 }
 
+.team,
+.hours-text,
+.pricing-text,
+.form-box {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.hours-text:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+.form-control {
+    border-radius: 6px;
+}
