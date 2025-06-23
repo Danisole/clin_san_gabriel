@@ -3926,6 +3926,12 @@ input[type="button"].btn-block {
   list-style: none;
 }
 
+@media (max-width: 575.98px) {
+    .navbar-brand img {
+        width: 120px !important;
+    }
+}
+
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
