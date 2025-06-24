@@ -543,6 +543,7 @@
                                 <h5 class="text-white text-uppercase">Patologias</h5>
                             </div>
                             <div class="team-social bg-dark text-center">
+                                <p></p>
                                 <p>Biopsias, PAP, citología</p>
                                 <p></p>
                             </div>
@@ -587,47 +588,49 @@
             <div class="col-lg-6 py-5">
                 <div class="form-box p-5 my-5 " style="background: rgba(33, 30, 28, 0.7);">
                     <h1 class="text-white text-center mb-4">Contacto</h1>
-                    <form>
+                    <form action="https://formsubmit.co/recepcion@sangabrielsj.com" method="POST">
+                        <!-- ocultar captcha y redirección -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control bg-transparent p-4" placeholder="Nombre" required="required" />
+                                    <input type="text" name="nombre" class="form-control bg-transparent p-4" placeholder="Nombre" required>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control bg-transparent p-4" placeholder="Apelido" required="required" />
+                                    <input type="text" name="apellido" class="form-control bg-transparent p-4" placeholder="Apellido" required>
                                 </div>
                             </div>
                         </div>
+
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <div class="date" id="date" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent p-4 datetimepicker-input" placeholder="Telefono" />
-                                    </div>
+                                    <input type="text" name="telefono" class="form-control bg-transparent p-4" placeholder="Teléfono">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <div class="time" id="time" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent p-4 datetimepicker-input" placeholder="Email" />
-                                    </div>
+                                    <input type="email" name="email" class="form-control bg-transparent p-4" placeholder="Email" required>
                                 </div>
                             </div>
                         </div>
-                       <div class="form-row">
+
+                        <div class="form-row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <textarea class="form-control bg-transparent p-4" rows="5" placeholder="Mensaje" required></textarea>
+                                    <textarea name="mensaje" class="form-control bg-transparent p-4" rows="5" placeholder="Mensaje" required></textarea>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <button class="btn btn-primary btn-block" type="submit" style="height: 47px;">Enviar</button>
                             </div>
                         </div>
-
                     </form>
+
                 </div>
             </div>
         </div>
